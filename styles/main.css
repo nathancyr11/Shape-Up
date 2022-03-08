@@ -27,6 +27,9 @@ body {
     background-color: white;
     box-shadow: 5px 10px 3px 10px #888888;
 }
+h3,p, blockquote {
+    margin-bottom: 12px;
+}
 h1{
     font-size: 300%;
     color: lightsteelblue;
@@ -34,9 +37,6 @@ h1{
     margin: 10px 0 0;
     font-variant: small-caps;
     text-shadow: 1px 1px 2px #000000, -1px -1px 2px #000000,1px -1px 2px #000000, -1px 1px 2px #000000;
-}
-h2,h3,p, blockquote {
-    margin-bottom: 12px;
 }
 header{
     border-bottom: 3px solid steelblue;
@@ -47,16 +47,11 @@ header h2 {
     font-style: italic;
     color: steelblue;
     text-shadow: 5px 5px 12px steelblue;
+    padding: 15px 0 2px;
 }
 #logoimage {
     float: left;
     padding: 1em 1.5em;
-}
-main{
-    padding: 0 1em;
-}
-main h2{
-    text-align: center;
 }
 .construction{
     display: block;
@@ -81,7 +76,7 @@ main h2{
     text-decoration: none;
     color: white;
     font-weight: bold;
-    transition: all 1s;
+    transition: background-color 0.5s;
 }
 .container li a:hover{
     color: black;
@@ -90,11 +85,11 @@ main h2{
 /* container second tier code*/
 .container ul{
     display: none;
+    background-color: steelblue;
+    width: 20%;
     list-style: none;
     position: absolute;
     top: 100%;
-    background-color: steelblue;
-    width: 20%;
     box-shadow: 7px 7px 15px -1px gray;;
 }
 .container ul li{
@@ -104,7 +99,6 @@ main h2{
     padding-left: 1em;
     display: block;
     width: 100%;
-    transition: all 1s;
 }
 .container li:hover > ul{
     display: block;
@@ -135,6 +129,12 @@ main h2{
 #nav_list ul li a:hover{
     color: white;
     background-color: steelblue;
+}
+main{
+    padding: 0 1em;
+}
+main h2{
+    text-align: center;
 }
 aside{
     width: 30%;
